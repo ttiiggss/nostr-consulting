@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nostr and Bitcoin Consulting</title>
+  <title>Nostr , Bitcoin and Security Consulting</title>
   
   <!-- Include Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -348,18 +348,9 @@
             aria-label={`Interactive particle effect with ${isBitcoinMode ? "Bitcoin" : "NOSTR"} text`}
             onClick={toggleMode}
           />
-          <div
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 cursor-pointer"
-            onClick={toggleMode}
-          >
-            <div
-              className={`font-bold text-4xl sm:text-6xl md:text-8xl select-none transition-all duration-1000 ${
-                isTransitioning ? "opacity-0 scale-90" : "opacity-100 scale-100"
-              } ${isBitcoinMode ? "text-black hover:text-orange-500" : "text-transparent"}`}
-            >
-              {isBitcoinMode ? "Bitcoin" : "NOSTR"}
-            </div>
-          </div>
+          
+          {/* Bitcoin text overlay completely removed */}
+          
           <div className="absolute bottom-[100px] text-center z-10">
             <p
               className={`font-mono text-2xl sm:text-4xl md:text-5xl font-bold transition-all duration-1000 ${
